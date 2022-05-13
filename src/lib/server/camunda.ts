@@ -7,10 +7,11 @@ export const camunda: ZBClient = new ZBClient(variables.camundaAddress, {
     camundaCloud: {
         clientId: variables.camundaClientId,
         clientSecret: variables.camundaClientSecret,
-        clusterId: variables.camundaClusterId
+        clusterId: variables.camundaClusterId,
+        cacheOnDisk: false
     },
     useTLS: true,
     eagerConnection: true,
-	onReady: () => console.log(`Connected!`),
-	onConnectionError: () => console.log(`Disconnected!`),
+    onReady: () => console.log(`Connected!`),
+    onConnectionError: () => console.log(`Disconnected!`),
 });
