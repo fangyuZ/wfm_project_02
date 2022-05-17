@@ -1,12 +1,28 @@
+<script  context="module" lang="ts">
+	export async function load({ }: any) {
+		await initCamunda({
+			address: variables.camundaAddress,
+			clientId: variables.camundaClientId,
+			clientSecret: variables.camundaClientSecret
+		})
+
+		return {
+			status: 200
+		};
+	}
+</script>
 <script lang="ts">
 	import 'carbon-components-svelte/css/all.css';
 	import '../app.css';
     import { Toggle } from 'carbon-components-svelte';
 	import { onMount } from 'svelte';
+import { variables } from '$lib/variables';
+import { initCamunda } from '$lib/client/camunda/camunda';
 
 	let theme = 'white';
 
 	let doc: any;
+
 	onMount(async () => {
 		doc = document;
 	});

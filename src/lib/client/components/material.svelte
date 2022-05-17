@@ -1,8 +1,13 @@
 <script lang="ts">
-	import { goto } from '$app/navigation';
-import { ButtonSet, Button } from 'carbon-components-svelte';
-	import { ImageLoader, InlineLoading } from 'carbon-components-svelte';
-import { Step, stepStore } from '../stores/step';
+	import { createEventDispatcher } from 'svelte';
+
+	import { ButtonSet, Button, ImageLoader, InlineLoading } from 'carbon-components-svelte';
+
+	import type { Order } from '$lib/client/model/order';
+	import type { Task } from '$lib/client/camunda/model';
+
+	export let task: Task<Order>;
+	const dispatch = createEventDispatcher();
 
 	const shelfs = [
 		{ label: 'A', img: '/materialA.jpg' },
@@ -14,13 +19,13 @@ import { Step, stepStore } from '../stores/step';
 
 	const shelf = shelfs[Math.floor(Math.random() * 5)];
 
-    function next() {
-        stepStore.set(Step.Package)
-    }
+	async function next() {
+		dispatch('completed', task);
+	}
 
-    function cancel() {
-        goto('/')
-    }
+	function cancel() {
+		dispatch('cancelled', task);
+	}
 </script>
 
 <div>

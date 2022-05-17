@@ -1,9 +1,10 @@
 <script lang="ts">
 	import { createEventDispatcher } from 'svelte';
-	import { ButtonSet, Button, ImageLoader, InlineLoading } from 'carbon-components-svelte';
 
-	import type { Task } from '$lib/client/camunda/model';
+	import { ButtonSet, Button } from 'carbon-components-svelte';
+
 	import type { Order } from '$lib/client/model/order';
+	import type { Task } from '$lib/client/camunda/model';
 
 	export let task: Task<Order>;
 	const dispatch = createEventDispatcher();
@@ -18,21 +19,16 @@
 </script>
 
 <div>
-	<h2>Package</h2>
-	<p>Please put the skis into the packaging. Take care of the edges and wrap in cushion material</p>
-	<div class="image">
-		<ImageLoader src="/package.jpg">
-			<svelte:fragment slot="loading">
-				<InlineLoading />
-			</svelte:fragment>
-			<svelte:fragment slot="error">An error occurred.</svelte:fragment>
-		</ImageLoader>
-	</div>
+	<h2>Store in warehouse</h2>
+	<p>
+		Check the packaging for faults and a clearly visible label. Package is ready for shipping,
+		please store it in the warehouse.
+	</p>
 
 	<div style="display: flex; width: 84%; justify-content: center;">
 		<ButtonSet>
 			<Button kind="secondary" on:click={() => cancel()}>Cancel</Button>
-			<Button on:click={() => next()}>Next</Button>
+			<Button on:click={() => next()}>Finish</Button>
 		</ButtonSet>
 	</div>
 </div>
@@ -46,9 +42,5 @@
 	}
 	p {
 		margin-bottom: var(--cds-spacing-06);
-	}
-	.image :global(img) {
-		width: auto !important;
-		height: 28em;
 	}
 </style>

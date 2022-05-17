@@ -1,7 +1,8 @@
-import type { Order } from "$lib/server/model/order";
 import { writable } from "svelte/store";
 
-const orders = writable<Order[]>([]);
+import type { Task } from "$lib/client/camunda/model";
+import type { Order } from "$lib/client/model/order";
 
-// Here we store the active data
-export { orders }
+const tasks = writable<Task<Order>[]>([]);
+
+export { tasks }

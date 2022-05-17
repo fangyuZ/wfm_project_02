@@ -1,0 +1,88 @@
+{
+  ".svelte-kit/runtime/client/start.js": {
+    "file": "start-fe096a64.js",
+    "src": ".svelte-kit/runtime/client/start.js",
+    "isEntry": true,
+    "imports": [
+      "_index-75c0c6bc.js",
+      "_singletons-267f4abd.js"
+    ],
+    "dynamicImports": [
+      "src/routes/__layout.svelte",
+      ".svelte-kit/runtime/components/error.svelte",
+      "src/routes/index.svelte",
+      "src/routes/orders/[id].svelte"
+    ]
+  },
+  "src/routes/__layout.svelte": {
+    "file": "pages/__layout.svelte-10fac483.js",
+    "src": "src/routes/__layout.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-75c0c6bc.js",
+      "_camunda-54acc2c1.js"
+    ],
+    "css": [
+      "assets/pages/__layout.svelte-6384d1e8.css"
+    ]
+  },
+  ".svelte-kit/runtime/components/error.svelte": {
+    "file": "error.svelte-1c4bfb21.js",
+    "src": ".svelte-kit/runtime/components/error.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-75c0c6bc.js"
+    ]
+  },
+  "src/routes/index.svelte": {
+    "file": "pages/index.svelte-efca45a0.js",
+    "src": "src/routes/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-75c0c6bc.js",
+      "_navigation-b6af1653.js",
+      "_camunda-54acc2c1.js",
+      "_singletons-267f4abd.js"
+    ]
+  },
+  "src/routes/orders/[id].svelte": {
+    "file": "pages/orders/_id_.svelte-06af49f0.js",
+    "src": "src/routes/orders/[id].svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-75c0c6bc.js",
+      "_navigation-b6af1653.js",
+      "_camunda-54acc2c1.js",
+      "_singletons-267f4abd.js"
+    ],
+    "css": [
+      "assets/pages/orders/_id_.svelte-1d1a320a.css"
+    ]
+  },
+  "_index-75c0c6bc.js": {
+    "file": "chunks/index-75c0c6bc.js"
+  },
+  "_singletons-267f4abd.js": {
+    "file": "chunks/singletons-267f4abd.js",
+    "imports": [
+      "_index-75c0c6bc.js"
+    ]
+  },
+  "_camunda-54acc2c1.js": {
+    "file": "chunks/camunda-54acc2c1.js",
+    "css": [
+      "assets/camunda-758c18e1.css"
+    ]
+  },
+  "_navigation-b6af1653.js": {
+    "file": "chunks/navigation-b6af1653.js",
+    "imports": [
+      "_index-75c0c6bc.js",
+      "_singletons-267f4abd.js"
+    ]
+  }
+}
