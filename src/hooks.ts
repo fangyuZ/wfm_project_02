@@ -4,3 +4,4 @@ import { handler as informCustomerHandler } from "$lib/server/workers/informCust
 
 camunda.subscribe("printDeliveryNote", printHandler);
 camunda.subscribe("informCustomer", informCustomerHandler);
+console.log("camunda subscribed")

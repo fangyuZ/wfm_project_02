@@ -6,3 +6,5 @@ const { Client, logger } = pkg;
 const config = { baseUrl: variables.camundaAddress, use: logger };
 
 export const camunda = new Client(config);
+
+console.log("camunda started")
