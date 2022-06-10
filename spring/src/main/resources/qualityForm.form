@@ -1,0 +1,20 @@
+{
+  "components": [
+    {
+      "label": "Quality OK",
+      "type": "checkbox",
+      "id": "Field_1dr1fcl",
+      "key": "quality",
+      "defaultValue": true
+    }
+  ],
+  "type": "default",
+  "id": "QualityForm",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.0.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.17.0",
+  "schemaVersion": 4
+}

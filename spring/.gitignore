@@ -1,0 +1,4 @@
+.vscode
+camunda-h2-database.mv.db
+camunda-h2-database.trace.db
+target

@@ -1,0 +1,161 @@
+{
+  "components": [
+    {
+      "label": "Name",
+      "type": "textfield",
+      "id": "Field_0jdb34a",
+      "key": "name",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "E-Mail",
+      "type": "textfield",
+      "id": "Field_08tc0kr",
+      "key": "email",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "values": [
+        {
+          "label": "Female",
+          "value": "female"
+        },
+        {
+          "label": "Male",
+          "value": "male"
+        }
+      ],
+      "label": "Gender",
+      "type": "select",
+      "id": "Field_1sjl5xi",
+      "key": "gender",
+      "defaultValue": "<none>",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Height",
+      "type": "number",
+      "id": "Field_1awfqdj",
+      "key": "height",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Weight",
+      "type": "number",
+      "id": "Field_0pgxvrx",
+      "key": "weight",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "values": [
+        {
+          "label": "Low",
+          "value": "low"
+        },
+        {
+          "label": "Medium",
+          "value": "medium"
+        },
+        {
+          "label": "Pro",
+          "value": "pro"
+        }
+      ],
+      "label": "Level",
+      "type": "select",
+      "id": "Field_1etoz40",
+      "key": "level",
+      "defaultValue": "value",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "values": [
+        {
+          "label": "Racing Ski",
+          "value": "racing"
+        },
+        {
+          "label": "Freestyle ski",
+          "value": "freestyle"
+        },
+        {
+          "label": "Freeride ski",
+          "value": "freeride"
+        },
+        {
+          "label": "Carving ski",
+          "value": "carving"
+        },
+        {
+          "label": "Big mountain ski",
+          "value": "mountain"
+        },
+        {
+          "label": "All mountain ski",
+          "value": "allmountain"
+        }
+      ],
+      "label": "Ski Type",
+      "type": "select",
+      "id": "Field_0t985wq",
+      "key": "skitype",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Address",
+      "type": "textfield",
+      "id": "Field_0vpekkd",
+      "key": "address",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Zip",
+      "type": "textfield",
+      "id": "Field_19ll7bn",
+      "key": "zip",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "City",
+      "type": "textfield",
+      "id": "Field_0aoqder",
+      "key": "city",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Country",
+      "type": "textfield",
+      "id": "Field_1csww5k",
+      "key": "country"
+    }
+  ],
+  "type": "default",
+  "id": "customerForm",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.0.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.17.0",
+  "schemaVersion": 4
+}

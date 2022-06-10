@@ -1,0 +1,11 @@
+spring.datasource.url: jdbc:h2:file:./db/camunda-h2-database
+
+camunda.bpm.admin-user:
+  id: aiski
+  password: aiski
+
+camunda.bpm.run.cors:
+  enabled: true
+
+camunda.bpm.authorization:
+  enabled: true
